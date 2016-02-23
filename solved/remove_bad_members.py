@@ -1,3 +1,18 @@
+"""
+Let's call some element of the given array A bad if it equals 0 and 
+there are no good (i.e. not bad) elements in the array before or 
+after it.
+
+Remove all bad elements from array A and then return it.
+
+Example
+
+    removeBadMembersfor([0, 9, 0, 4]) = [9, 0, 4]
+    removeBadMembersfor([0, 9, 5, 0, 0, 0, 0, 2, 0, 0]) = [9, 5, 0, 0, 0, 0, 2]
+    removeBadMembersfor([1, 6, 0, 2]) = [1, 6, 0, 2]
+
+"""
+
 def removeBadMembers(A):
     B = A
     a,b = 0, 0
