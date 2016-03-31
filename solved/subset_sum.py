@@ -9,7 +9,7 @@ def SubsetSum(ARR,SUM):
 				count += 1
 	return count
 
-print SubsetSum([1, 2, 3, 4, -5], 0)
+#print SubsetSum([1, 2, 3, 4, -5], 0)
 
 #USING ITERTOOLS
 def GetCombinationsForSum(ARR,SUM):
@@ -27,12 +27,20 @@ def choose_iter(elements,length):
 		if length == 1:
 			yield (elements[i],)
 		else:
-			#print elements[i],elements[i+1:len(elements)],length-1
+			print elements[i],elements[i+1:len(elements)],length-1
 			for next in choose_iter(elements[i+1:len(elements)],length-1):
-				#print next
+				print (elements[i],),next
 				yield (elements[i],) + next
 
 def choose(l,k):
 	return list(choose_iter(l,k))
 
-#print list(choose_iter("abcde",4))
+print list(choose_iter("abcde",4))
+
+"""
+a
+bcde
+cde
+de
+e
+"""
