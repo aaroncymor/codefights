@@ -1,4 +1,5 @@
 """
+http://www.geeksforgeeks.org/count-numbers-from-1-to-n-that-have-4-as-a-a-digit/
 Find the total number of times digit 4 occurs in the range [0,n).
 
 Example:
